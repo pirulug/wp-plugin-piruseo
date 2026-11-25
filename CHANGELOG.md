@@ -1,5 +1,17 @@
 # Historial de versiones — PiruSEO
 
+## [2026-11-02] - 2026-11-25 10:50
+
+- **Responsable:** pirulug
+- **Archivos modificados:** `README.md`, `readme.txt`, `VERSION`, `CHANGELOG.md`, `wp-plugin-piruseo.php`
+
+### Added
+- Documentación completa del proyecto en `README.md` (características, instalación, uso de variables, breadcrumbs, estructura y versionado).
+- Archivo `readme.txt` en formato estándar del directorio de plugins de WordPress.org.
+
+### Changed
+- Sincronización de la versión del plugin a `2026-11-02` en `VERSION`, `wp-plugin-piruseo.php` y `CHANGELOG.md`.
+
 ## 2026-11-01
 - **Fecha y hora:** 2026-11-25 10:42:01 -05:00
 - **Responsable:** Pirulug

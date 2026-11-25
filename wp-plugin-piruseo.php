@@ -3,7 +3,7 @@
  * Plugin Name: PiruSEO
  * Plugin URI:  https://example.com/piruseo
  * Description: Plugin completo de SEO para WordPress similar a Yoast SEO: análisis SEO y de legibilidad en tiempo real, vista previa SERP, metaetiquetas, Open Graph, Twitter Cards, Schema JSON-LD, sitemap XML y migas de pan.
- * Version:     2026-11-01
+ * Version:     2026-11-02
  * Author:      Pirulug
  * Text Domain: piruseo
  * Domain Path: /languages
@@ -17,9 +17,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $piruseo_version_file = plugin_dir_path( __FILE__ ) . 'VERSION';
-$piruseo_version      = file_exists( $piruseo_version_file ) ? trim( (string) file_get_contents( $piruseo_version_file ) ) : '2026-11-01';
+$piruseo_version      = file_exists( $piruseo_version_file ) ? trim( (string) file_get_contents( $piruseo_version_file ) ) : '2026-11-02';
 
-define( 'PIRUSEO_VERSION', '' !== $piruseo_version ? $piruseo_version : '2026-11-01' );
+define( 'PIRUSEO_VERSION', '' !== $piruseo_version ? $piruseo_version : '2026-11-02' );
 define( 'PIRUSEO_FILE', __FILE__ );
 define( 'PIRUSEO_DIR', plugin_dir_path( __FILE__ ) );
 define( 'PIRUSEO_URL', plugin_dir_url( __FILE__ ) );
