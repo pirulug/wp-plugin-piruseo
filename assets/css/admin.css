@@ -1,0 +1,366 @@
+/* PiruSEO — Estilos alineados con WordPress Core Admin */
+
+.piruseo-version-badge {
+	display: inline-block;
+	margin-left: 6px;
+	padding: 2px 8px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.5;
+	color: #50575e;
+	background: #f0f0f1;
+	border: 1px solid #c3c4c7;
+	border-radius: 3px;
+	vertical-align: middle;
+}
+
+.piruseo-tab-panel {
+	display: none;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-top: 0;
+	padding: 16px 20px;
+}
+
+.piruseo-tab-panel.is-active {
+	display: block;
+}
+
+.piruseo-separator-picker {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.piruseo-sep-option {
+	cursor: pointer;
+}
+
+.piruseo-sep-option input {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.piruseo-sep-option span {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 32px;
+	height: 30px;
+	padding: 0 8px;
+	border: 1px solid #8c8f94;
+	border-radius: 3px;
+	font-weight: 600;
+	font-size: 14px;
+	color: #2c3338;
+	background: #f6f7f7;
+}
+
+.piruseo-sep-option:hover span {
+	background: #f0f0f1;
+	border-color: #2271b1;
+	color: #2271b1;
+}
+
+.piruseo-sep-option input:focus + span {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+.piruseo-sep-option input:checked + span {
+	background: #2271b1;
+	color: #fff;
+	border-color: #2271b1;
+}
+
+.piruseo-media-field {
+	display: flex;
+	gap: 6px;
+	align-items: center;
+	max-width: 560px;
+}
+
+/* Meta Box — Native WP Postbox Integration */
+.piruseo-metabox {
+	margin: -6px -12px -12px;
+}
+
+.piruseo-mb-tabs {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #c3c4c7;
+	background: #f0f0f1;
+	padding: 8px 12px 0;
+	gap: 4px;
+}
+
+.piruseo-mb-tab {
+	appearance: none;
+	border: 1px solid #c3c4c7;
+	border-bottom: 0;
+	background: #dcdcde;
+	padding: 7px 12px;
+	margin-bottom: -1px;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.4;
+	color: #50575e;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.piruseo-mb-tab:hover,
+.piruseo-mb-tab:focus {
+	background: #fff;
+	color: #1d2327;
+}
+
+.piruseo-mb-tab.is-active {
+	background: #fff;
+	color: #1d2327;
+	border-bottom: 1px solid #fff;
+}
+
+.piruseo-mb-tab .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+}
+
+.piruseo-mb-panel {
+	display: none;
+	padding: 14px 16px 16px;
+	background: #fff;
+}
+
+.piruseo-mb-panel.is-active {
+	display: block;
+}
+
+.piruseo-field {
+	margin-bottom: 14px;
+}
+
+.piruseo-field label {
+	display: inline-block;
+	margin-bottom: 4px;
+}
+
+.piruseo-field-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 4px;
+}
+
+.piruseo-counter {
+	font-size: 12px;
+	color: #646970;
+}
+
+.piruseo-meter {
+	height: 5px;
+	background: #dcdcde;
+	border-radius: 2px;
+	overflow: hidden;
+	margin-top: 6px;
+}
+
+.piruseo-meter-bar {
+	height: 100%;
+	width: 0;
+	transition: width 0.2s ease, background-color 0.2s ease;
+	background: #8c8f94;
+}
+
+.piruseo-meter-bar.is-good {
+	background: #00a32a;
+}
+
+.piruseo-meter-bar.is-ok {
+	background: #dba617;
+}
+
+.piruseo-meter-bar.is-bad {
+	background: #d63638;
+}
+
+.piruseo-var-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-top: 6px;
+}
+
+/* SERP Preview */
+.piruseo-serp-box {
+	background: #f6f7f7;
+	border: 1px solid #c3c4c7;
+	padding: 12px 14px;
+	margin-bottom: 16px;
+}
+
+.piruseo-serp-toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.piruseo-serp-preview {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	padding: 12px 14px;
+	font-family: Arial, sans-serif;
+	max-width: 600px;
+}
+
+.piruseo-serp-preview.mode-mobile {
+	max-width: 360px;
+}
+
+.piruseo-serp-site {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 4px;
+}
+
+.piruseo-serp-site-name {
+	font-size: 14px;
+	color: #202124;
+	line-height: 1.3;
+}
+
+.piruseo-serp-url {
+	font-size: 12px;
+	color: #4d5156;
+	word-break: break-all;
+}
+
+.piruseo-serp-title {
+	font-size: 20px;
+	line-height: 1.3;
+	color: #1a0dab;
+	margin-bottom: 4px;
+}
+
+.piruseo-serp-preview.mode-mobile .piruseo-serp-title {
+	font-size: 18px;
+}
+
+.piruseo-serp-desc {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #4d5156;
+}
+
+/* Analysis & WP Core Status Colors */
+.piruseo-analysis-section {
+	border-top: 1px solid #dcdcde;
+	padding-top: 14px;
+	margin-top: 8px;
+}
+
+.piruseo-analysis-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+
+.piruseo-score-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 600;
+	background: #f0f0f1;
+	color: #50575e;
+	border: 1px solid #c3c4c7;
+}
+
+.piruseo-score-badge.is-good {
+	background: #edfaef;
+	color: #007017;
+	border-color: #00a32a;
+}
+
+.piruseo-score-badge.is-ok {
+	background: #fcf9e8;
+	color: #996800;
+	border-color: #dba617;
+}
+
+.piruseo-score-badge.is-bad {
+	background: #fcf0f1;
+	color: #b32d2e;
+	border-color: #d63638;
+}
+
+.piruseo-checks-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.piruseo-checks-list li {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	padding: 6px 0;
+	font-size: 13px;
+	line-height: 1.45;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+.piruseo-checks-list li:last-child {
+	border-bottom: 0;
+}
+
+/* Traffic-light dots using WP Core palette */
+.piruseo-dot {
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	flex-shrink: 0;
+	margin-top: 4px;
+	background: #8c8f94;
+}
+
+.piruseo-mb-tab .piruseo-dot {
+	margin-top: 0;
+}
+
+.piruseo-dot-good {
+	background: #00a32a;
+}
+
+.piruseo-dot-ok {
+	background: #dba617;
+}
+
+.piruseo-dot-bad {
+	background: #d63638;
+}
+
+.piruseo-dot-noindex {
+	background: #2271b1;
+}
+
+.piruseo-dot-na {
+	background: #8c8f94;
+}
+
+.piruseo-muted {
+	color: #8c8f94;
+}
+
+/* List table column width */
+.column-piruseo_score {
+	width: 56px;
+	text-align: center;
+}
